@@ -15,7 +15,7 @@ html {
 }
 
 :root {
-  --primary-color: var(#fff4e6);
+  --primary-color: #e67e22;
 }
 
 /****************************/
@@ -413,7 +413,7 @@ Shades:
   margin: 0 auto;
   padding: 0 2.4rem;
   /* for working */
-  margin-bottom: 100px;
+  margin-bottom: 10rem;
 }
 
 .section-feature-grid {
@@ -440,13 +440,93 @@ Shades:
 }
 
 /* Form-section */
+/* adding the white gradient on the bgc and correcting the padding there */
 .section-form {
+  background-color: var(--primary-color);
+  padding: 4.8rem;
+  max-width: 120rem;
+  margin: 0 auto;
+  border-radius: 1.6rem;
+  margin-bottom: 10rem;
+}
+
+.section-form-container {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  gap: 3.2rem;
+  align-items: center;
+  background-color: gray;
 }
 
 .form-content {
+  background-color: lightblue;
+}
+
+.form-content-heading {
+  font-size: 4rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.form-content-text {
+  margin-bottom: 2rem;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+}
+
+.input-container label {
+  font-size: 1.8rem;
+}
+
+.input-container input {
+  width: 30rem;
+  font-size: 1.8rem;
+  padding: 1.2rem 1.2rem;
+  border-radius: 8px;
+  border: 1px solid white;
+}
+
+.actions {
+  align-self: end;
+}
+
+.actions button {
+  font-size: 1.8rem;
+  width: 30rem;
+  padding: 1.2rem 1.2rem;
+  border-radius: 8px;
+  border: 1px solid #572c03;
+  background-color: #572c03;
+  color: white;
+  font-weight: 600;
+}
+
+.actions button:hover {
+  cursor: pointer;
+}
+
+.form-content__form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  justify-items: center;
+  align-items: center;
 }
 
 .form-image {
+  background-color: lightblue;
+  align-self: center;
+  justify-self: center;
+}
+/* whyis the padding changing here when I try to fit the image */
+.form-image img {
+  width: 100%;
+  height: 40rem;
 }
 
 /* media queries */
