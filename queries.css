@@ -1,0 +1,13 @@
+/*******************/
+/* Media Queries */
+/*******************/
+
+@media (max-width: 1344px) {
+  .hero {
+    max-width: 120rem;
+  }
+
+  .primary-heading {
+    font-size: 4.4rem;
+  }
+}
